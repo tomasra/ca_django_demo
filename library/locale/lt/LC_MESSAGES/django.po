@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-27 18:44+0300\n"
+"PO-Revision-Date: 2022-09-27 18:50+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: lt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
+"11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
+"1 : n % 1 != 0 ? 2: 3);\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: forms.py:17
+#, python-format
+msgid "Username %s is taken!"
+msgstr "Vartotojo vardas %s užimtas!"
+
+#: forms.py:23
+#, python-format
+msgid "Email %s is taken!"
+msgstr "El. pašto adresas %s užimtas!"
+
+#: forms.py:31
+msgid "Passwords do not match!"
+msgstr "Slaptažodžiai nesutampa!"
+
+#: models.py:13
+msgid "Title"
+msgstr "Pavadinimas"
+
+#: models.py:15
+msgid "Summary"
+msgstr "Santrauka"
+
+#: models.py:18
+msgid "Cover"
+msgstr "Viršelis"
+
+#: templates/library/index.html:4
+msgid "Local library"
+msgstr "Vietinė biblioteka"
+
+#: templates/library/index.html:5
+msgid "Welcome to my Library"
+msgstr "Sveiki atvykę į mano biblioteką"
+
+#: templates/library/index.html:6
+msgid "Today we have:"
+msgstr "Šiandien turime:"
+
+#: templates/library/index.html:8
+msgid "Books"
+msgstr "Knygos"
+
+#: templates/library/index.html:9
+msgid "Book Instances"
+msgstr "Egzemplioriai"
+
+#: templates/library/index.html:10
+msgid "Now Available"
+msgstr "Šiuo metu turime"
+
+#: templates/library/index.html:11
+msgid "Authors"
+msgstr "Autoriai"
+
+#: templates/library/index.html:13
+msgid "Your visits:"
+msgstr "Jūsų apsilankymai:"

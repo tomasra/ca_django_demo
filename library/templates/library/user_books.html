@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Mano paimtos knygos</h1>
+    {% if books %}
+        {% for bookinst in books %}
+    <hr>
+        <ul>
+        <li><strong class="{% if bookinst.is_overdue %}text-danger{% endif %}">Pavadinimas: {{bookinst.book.title}}</strong></li>
+        <li><strong>Gražinimo terminas:</strong> {{bookinst.due_back}}</li>
+            {% if bookinst.reader == user %}
+            <div>
+                <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'library:my-book-update' bookinst.id %}">Redaguoti</a>
+                <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'library:my-book-delete' bookinst.id %}">Ištrinti</a>
+            </div>
+            {% endif %}
+        <br/>
+        <a class="btn btn-primary" href="{% url 'library:my-book' bookinst.pk %}" role="button">Peržiūrėti</a>
+      </li>
+    </ul>
+{% endfor %}
+    {% else %}
+      <p>There are no books borrowed.</p>
+    {% endif %}
+
+<a class="nav-link" href="{% url 'library:my-borrowed-new' %}">Naujas egzempliorius</a>
+{% endblock %}
